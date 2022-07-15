@@ -1,0 +1,33 @@
+.home{
+    margin-top: 90px;
+    color: rgba(8,34,78,.9);
+}
+.tittle{
+    margin-bottom: 0;
+}
+.pagination{
+    display: flex;
+}
+
+@media only screen and (max-width: 650px) {
+    .pagination{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .pagination{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .pagination{
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+}

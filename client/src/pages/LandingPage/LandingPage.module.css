@@ -1,0 +1,168 @@
+.container {
+    display: flex;
+    color: #4be4f2;
+    background-image: url(../../img/fondo_dog_app.png);
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    padding-top: 10px;
+    
+}
+.header{
+    background-color: rgba(8,34,78,.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+.header_btn{
+    border: 2px solid #f24a4a;
+    background-color: transparent;
+    padding: 8px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+}
+.header_btn:hover{
+    cursor: pointer;
+    background-color: #d63f3f;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto; 
+    align-items: center;
+}
+.banner a{
+    text-decoration: none;
+}
+
+.banner_tittle{
+    margin: 0;
+}
+.banner_description {
+    color: #fff;
+}
+.banner_btn{
+    border: 2px solid #f24a4a;
+    background-color: #f24a4a;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.banner_btn:hover{
+    cursor: pointer;
+    background-color: #d63f3f;
+    box-shadow: 1px 2px 4px rgb(160, 160, 160);
+}
+
+.contents{
+    color: #192229;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.contents h2{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.contents_items{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contents_item{
+    display: flex;
+    flex-direction: column;
+}
+.contents_items p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.contents_items img{
+    height: 175px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 650px) {
+    .container {
+        padding-bottom: 30px;
+    }
+    .banner_tittle{
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .banner_description {
+        width: 200px;
+        font-size: 12px;
+    }
+    .banner_btn{
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 650px) {
+    .container {
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    .banner_tittle{
+        margin-top: 15px;
+        font-size: 25px;
+    }
+    .banner_description {
+        width: 340px;
+        font-size: 15px;
+    }
+    .banner_btn{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 900px) {
+    .banner_tittle{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    .banner_description {
+        width: 450px;
+        font-size: 18px;
+    }
+    .banner_btn{
+        display: block;
+    }
+    .contents_items{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contents h2{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .banner_tittle{
+        font-size: 40px;
+        margin-top: 25px;
+    }
+    .banner_description {
+        width: 480px;
+        font-size: 20px;
+    }   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

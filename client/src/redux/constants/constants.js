@@ -1,0 +1,12 @@
+export const GET_ALL_DOGS = 'GET_ALL_DOGS';
+export const GET_ALL_TEMPERAMENTS = 'GET_ALL_TEMPERAMENTS';
+export const GET_DOG_DETAIL = 'GET_DOG_DETAIL';
+export const ADD_DOG_FAVORITE = 'ADD_DOG_FAVORITE';
+export const REMOVE_DOG_FAVORITE = 'REMOVE_DOG_FAVORITE';
+export const CREATE_DOG = 'CREATE_DOG';
+export const CLEAR_DOG_DETAIL = 'CLEAR_DOG_DETAIL';
+export const SEARCH_DOGS = 'SEARCH_DOGS';
+export const SORT_RACE = 'SORT_RACE';
+export const SORT_WEIGHT = 'SORT_WEIGHT'; 
+export const FILTER_RACE = 'FILTER_RACE'; 
+export const FILTER_TEMPERAMENT = 'FILTER_TEMPERAMENT'; 

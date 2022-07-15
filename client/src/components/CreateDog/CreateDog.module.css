@@ -1,0 +1,179 @@
+.createDog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+.createDog img{
+    width: 100%;
+}
+.createDog_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.createDog_form h1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color:rgba(23, 30, 46, 0.95);
+}
+.createDog_content{
+    display: flex;
+}
+.createDog_form>div{
+    border: 1px solid rgba(23, 30, 46, 0.95);
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: rgba(23, 30, 46, 0.95);
+    color: #fff;
+    margin-bottom: 30px;
+}
+.createDog_item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.createDog_item input{
+    width: 50px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc
+}
+
+.createDog_label{
+    display: block
+}
+
+.createDog_seccion{
+    border-bottom:1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.createDog_seccion>label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.createDog_seccion>input{
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc
+}
+
+.temperaments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.temperaments_tittle{
+    width: 100%;
+}
+.list_temperaments{
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 260px;
+    list-style: none;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+.createDog_btn{
+    border: 2px solid #f24a4a;
+    background-color: #f24a4a;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+.createDog_btn:hover{
+    background-color: #f51b1b;
+    border: 2px solid #f51b1b;
+}
+/* Estilos Barra Scroll Select*/
+.list_temperaments::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.list_temperaments::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.list_temperaments::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
+.list_temperaments::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+p.danger {
+    color: #e95d5d;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+input.danger {
+    border: 2px solid red;
+}
+.input_required{
+    font-size: 12px;
+}
+@media only screen and (max-width: 900px) {
+    .createDog{
+        flex-direction: column-reverse;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .createDog_form h1{
+        font-size: 22px;
+    }
+    .createDog_content{
+        flex-direction: column;
+    }
+    .createDog_seccion>input{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .createDog_form h1{
+        font-size: 28px;
+    }
+    .createDog_content{
+        flex-direction: column;
+    }
+    .createDog_seccion>input{
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .createDog_form{
+        width: 80%;
+    }
+    .createDog_form h1{
+        font-size: 30px;
+    }
+    .createDog_content{
+        flex-direction: row;
+    }
+    .createDog_seccion{
+        margin-right: 30px;
+    }
+    .createDog_seccion>input{
+        width: 85%;
+    }
+}

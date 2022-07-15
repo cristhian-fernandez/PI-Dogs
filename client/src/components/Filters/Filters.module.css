@@ -1,0 +1,96 @@
+.filters{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filters div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filters label{
+    font-size: 15px;
+    color: rgb(88, 104, 126);
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.filters select{
+    width: 70%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(8,34,78,.9);
+    color: rgba(8,34,78,.9);
+    padding-bottom: 5px;
+    outline: none;
+}
+.btn_reset{
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid rgba(8,34,78,.9);
+    background-color: rgba(8,34,78,.9);
+    cursor: pointer;
+}
+.btn_reset:hover{
+    background-color: rgba(8,34,78,.99);
+}
+
+/* Estilos Barra Scroll Select*/
+.filters select::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.filters select::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.filters select::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
+.filters select::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+@media only screen and (max-width: 650px) {
+    .filters{
+        flex-wrap: wrap;
+    }
+    .filters div{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .filters label{
+        margin-bottom: 5px;
+    }
+    .btn_reset{
+        padding: 12px 15px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .filters{
+        flex-wrap: wrap;
+    }
+    .filters div{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .filters label{
+        margin-bottom: 5px;
+    }
+    .btn_reset{
+        padding: 12px 15px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .filters div{
+        width: 20%;
+        margin-bottom: 0;
+    }
+    .filters label{
+        margin-bottom: 5px;
+    }
+}

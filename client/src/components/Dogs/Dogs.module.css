@@ -1,0 +1,23 @@
+
+.dogs_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.dogs_loading{
+    color: rgba(8,34,78,.9);
+    margin-top: 30px;
+}
+
+.dogs_loading h2 {
+    margin-bottom: 0;
+}
+
+.dogs_loading img {
+    position: relative;
+    top: -100px;
+}

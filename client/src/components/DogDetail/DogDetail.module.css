@@ -1,0 +1,37 @@
+.dogDetail{
+    margin-top: 60px;
+    color: rgba(8,34,78,.9);
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+
+.dogDetail_img{
+    width: 300px;
+    border: 1px solid #f24a4a;;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px #f24a4a;;
+}
+.dogDetail p{
+    margin: 5px;
+}
+.dogDetail_name{
+    font-size: 28px;
+    color:#f24a4a;
+}
+.dogDetail p span{
+    font-weight: 600;
+}
+.dogDetail_loading{
+    color: #f24a4a;
+}
+
+.dogDetail_loading img{
+    width: 400px;
+}
+
+@media only screen and (max-width: 650px) {
+    .dogDetail{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

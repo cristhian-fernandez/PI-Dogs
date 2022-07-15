@@ -1,0 +1,28 @@
+.home{
+    margin-top: 60px;
+    background-color: #ecf0f3;
+}
+.tittle{
+    padding-top: 30px;
+    margin-bottom: 20px;
+    color: rgba(8,34,78,.9);
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.sub_tittle{
+    display: none;
+    color: rgba(8,34,78,.9);
+}
+
+@media only screen and (min-width: 900px) {
+    .sub_tittle{
+        display: block;
+    }
+    .pagination{        
+        justify-content: space-between;
+    }
+}
