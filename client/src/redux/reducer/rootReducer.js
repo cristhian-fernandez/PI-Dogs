@@ -18,7 +18,9 @@ const initialState = {
     dogs : [],
     allDogs : [],
     dogDetail : {},
-    dogsFavorites :[],
+    // dogsFavorites :[],
+    dogsFavorites : JSON.parse(window.localStorage.getItem('dogsFavorites') || '[]'),
+    // dogsFavorites : localStorage.getItem('dogsFavorites') ? JSON.parse(localStorage.getItem('dogsFavorites')) : [],
     temperaments : []
 };
 
@@ -38,14 +40,20 @@ const rootReducer = (state = initialState, action) => {
                 dogDetail : action.payload
             }
         case ADD_DOG_FAVORITE:
+            const addValue = [...state.dogsFavorites, action.payload];
+            window.localStorage.setItem('dogsFavorites', JSON.stringify(addValue));
             return {
                 ...state,
-                dogsFavorites : [...state.dogsFavorites, action.payload]
+                // dogsFavorites : [...state.dogsFavorites, action.payload]
+                dogsFavorites : JSON.parse(window.localStorage.getItem('dogsFavorites'))
             }
         case REMOVE_DOG_FAVORITE:
+            const removeValue = state.dogsFavorites.filter(dog => dog.id !== action.payload);
+            window.localStorage.setItem('dogsFavorites', JSON.stringify(removeValue));
             return {
                 ...state,
-                dogsFavorites : state.dogsFavorites.filter(dog => dog.id !== action.payload)
+                // dogsFavorites : state.dogsFavorites.filter(dog => dog.id !== action.payload)
+                dogsFavorites : JSON.parse(window.localStorage.getItem('dogsFavorites'))
             }
         case CREATE_DOG:
             return {

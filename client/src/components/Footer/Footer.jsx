@@ -6,8 +6,11 @@ class Footer extends Component {
     render() { 
         return (
             <div className={styles.footer}>
-                <span>
-                    Copyright © 2022 | Desarrollado por Cristhian Fernández Cumbia - Perú
+                <span className={styles.copyright}>
+                    Copyright © 2022 | Cristhian Fernández - Perú
+                    <a href="https://www.linkedin.com/in/cristhian-fernandez-cumbia/" target='_blank' rel='noreferrer'>
+                    <span className={styles.linkedin}><i class="fa-brands fa-linkedin"></i></span>
+                    </a>
                 </span>
             </div>
         );

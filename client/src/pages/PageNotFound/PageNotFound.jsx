@@ -11,7 +11,12 @@ function PageNotFound() {
                 <picture>
                     <img src={imgDog} alt="logo_dog" />
                 </picture>
-                <Link to='/home'><button className={styles.header_btn}>EMPEZAR</button></Link>
+                <div>
+                    <a href="https://www.linkedin.com/in/cristhian-fernandez-cumbia/" target='_blank' rel='noreferrer'>
+                        <span className={styles.linkedin}><i class="fa-brands fa-linkedin"></i></span>
+                    </a>
+                    <Link to='/home'><button className={styles.header_btn}>EMPEZAR</button></Link>
+                </div> 
             </div>
             <div className={styles.pageNotFound}>
                 <img src={img404} alt="img404" className={styles.img404}/>

@@ -27,7 +27,14 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 400px) {
+    .input_text{
+        width: 180px;
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 400px) {
     .input_text{
         width: 250px;
         padding: 8px 10px;

@@ -1,7 +1,8 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { addDogFavorite, removeDogFavorite } from '../../redux/actions/actions';
+
 import style from './DogCard.module.css';
 
 function DogCard(props) {
@@ -24,7 +25,6 @@ function DogCard(props) {
         }
     }
     
-
     return (
         <>
             {

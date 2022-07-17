@@ -1,6 +1,7 @@
 .pageNotFound{
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 40px;
 }
 .header{
     background-color: rgba(8,34,78,.9);
@@ -18,9 +19,18 @@
     color: #fff;
     font-weight: 500;
 }
+.header>div{
+    display: flex;
+    align-items: center;
+}
 .header_btn:hover{
     cursor: pointer;
     background-color: #d63f3f;
+}
+.linkedin{
+    font-size: 30px;
+    padding: 0 15px;
+    color: #fff;
 }
 .banner_btn{
     border: 2px solid #f24a4a;
@@ -54,6 +64,9 @@ p{
 }
 
 @media only screen and (max-width: 650px) {
+    .header {
+        padding: 10px 15px;
+    }
     .img404{
         width: 200px;
     }

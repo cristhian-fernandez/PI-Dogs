@@ -59,10 +59,14 @@ picture img {
 }
 
 @media only screen and (max-width: 650px) {
+    .nav {
+        padding: 10px 10px;
+    }
     .nav_right>a{
         display: none;
     }
     .nav_left nav a:first-child {
         display: none;
     }
+    
 }
